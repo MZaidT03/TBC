@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #454545;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.nav__logo {
+  width: 100px;
+}
+.nav__links {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__item {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav__link {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: #000;
+}
+.nav__link--btn {
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #444;
+  transition: all 0.5s;
+}
+.nav__link:hover,
+.nav__link:active {
+  border-bottom: 3px solid black;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  background-color: #000;
+}
+img {
+  width: 260px;
+  border-radius: 30px;
+}
+.main__menu {
+  height: 100%;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+.main__menu div {
+  margin-bottom: 40px;
+}
+.menu__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+}
+.menu__link {
+  background-color: #37383d;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.5s;
+  font-size: 20px;
+  font-weight: 500;
+}
+.active,
+.menu__link:hover,
+.menu__link:active {
+  cursor: pointer;
+  background-color: #807f7f;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  background-color: #6e6e6e;
+  border-radius: 30px;
+  padding: 20px;
+  height: 500px;
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu a h3 {
+  text-decoration: underline;
+}
+.menu a p {
+  font-size: 18px;
+}
+.menu a .like {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu a .like button {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.5s;
+}
+.menu a .like button:hover {
+  cursor: pointer;
+  color: white;
+  background: #444;
+}
+
+.hidden__menu {
+  display: none;
+}
+.footer {
+  padding: 10rem 3rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0px 10px 400px rgb(255, 255, 255);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal__form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal__form input {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #707070;
+  border-radius: 0.5rem;
+}
+
+.modal__form button {
+  grid-column: 1 / 3;
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.modal__form button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #444;
+}
+.modal__form a {
+  grid-column: 1 / 3;
+  text-align: center;
+  text-decoration: none;
+}
+.btn--change {
+  color: white;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background: none;
+}
+.btn--change:hover {
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.hidden_form {
+  display: none;
+}
